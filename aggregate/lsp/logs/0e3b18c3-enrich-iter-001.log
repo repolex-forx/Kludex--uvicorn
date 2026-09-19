@@ -1,0 +1,21 @@
+[2026-09-19T06:27:17Z] === ENRICH ITERATION 1 START | repo=Kludex/uvicorn sha=0e3b18c3 ===
+[2026-09-19T06:27:17Z] [iter=1] PHASE START: enrich repo=Kludex/uvicorn sha=0e3b18c3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0e3b18c3-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0e3b18c39959ad4ec8bfe6cb7e11c82664aaa702.nq.gz
+[2026-09-19T06:27:27Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-19T06:27:31Z] [iter=1] AST store loaded triples=549471 load_secs=4 mem_mb=789 MB
+[2026-09-19T06:27:31Z] [iter=1] Step 2: Finding LSP targets mem_mb=789 MB
+[2026-09-19T06:27:32Z] [iter=1] LSP targets found call_sites=3424 imports=0 extends=0 implements=0 secs=1
+[2026-09-19T06:27:32Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=789 MB
+[2026-09-19T06:27:35Z] [iter=1] Position index built positions=36950 nodes_with_types=48122 secs=3 mem_mb=789 MB
+[2026-09-19T06:27:35Z] [iter=1] Step 3: Starting LSP resolution mem_mb=789 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T06:27:35Z] [iter=1] Resolving target type target_type=call_site count=3424
+[2026-09-19T06:28:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=1 resolved=55 errors=148 current=uvicorn/protocols/websockets/websockets_sansio_impl.py
+[2026-09-19T06:28:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=4 resolved=319 errors=271 current=uvicorn/middleware/wsgi.py
+[2026-09-19T06:29:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=7 resolved=402 errors=498 current=tests/test_default_headers.py
+[2026-09-19T06:30:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=12 resolved=606 errors=624 current=tests/middleware/test_proxy_headers.py
+[2026-09-19T06:30:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=17 resolved=827 errors=766 current=uvicorn/lifespan/on.py
+[2026-09-19T06:31:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=26 resolved=1210 errors=887 current=uvicorn/protocols/http/httptools_impl.py
+[2026-09-19T06:31:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=33 resolved=1477 errors=1032 current=uvicorn/middleware/message_logger.py
+[2026-09-19T06:32:19Z] [iter=1] Target type resolved target_type=call_site resolved=1651 errors=1115 secs=284 mem_mb=789 MB
+[2026-09-19T06:32:23Z] [iter=1] Step 5: Writing final enrichment file triples=32605
+[2026-09-19T06:32:23Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0e3b18c39959ad4ec8bfe6cb7e11c82664aaa702.nq.gz size_kb=641
+[2026-09-19T06:32:23Z] [iter=1] PHASE END: enrich elapsed_s=307 elapsed_min=5.1 total_triples=32605
