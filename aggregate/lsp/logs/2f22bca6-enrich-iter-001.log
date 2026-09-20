@@ -1,0 +1,18 @@
+[2026-09-20T05:49:52Z] === ENRICH ITERATION 1 START | repo=Kludex/uvicorn sha=2f22bca6 ===
+[2026-09-20T05:49:52Z] [iter=1] PHASE START: enrich repo=Kludex/uvicorn sha=2f22bca6 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2f22bca6-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2f22bca659cdcaea6ed37e5c9aa128bf99150eb6.nq.gz
+[2026-09-20T05:50:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-20T05:50:09Z] [iter=1] AST store loaded triples=413094 load_secs=3 mem_mb=627 MB
+[2026-09-20T05:50:09Z] [iter=1] Step 2: Finding LSP targets mem_mb=627 MB
+[2026-09-20T05:50:10Z] [iter=1] LSP targets found call_sites=2828 imports=0 extends=0 implements=0 secs=1
+[2026-09-20T05:50:10Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=627 MB
+[2026-09-20T05:50:13Z] [iter=1] Position index built positions=28128 nodes_with_types=36119 secs=2 mem_mb=627 MB
+[2026-09-20T05:50:13Z] [iter=1] Step 3: Starting LSP resolution mem_mb=627 MB already_completed_types=[] already_completed_files=0
+[2026-09-20T05:50:13Z] [iter=1] Resolving target type target_type=call_site count=2828
+[2026-09-20T05:50:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=2 resolved=120 errors=137 current=uvicorn/server.py
+[2026-09-20T05:51:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=7 resolved=345 errors=355 current=uvicorn/main.py
+[2026-09-20T05:51:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=14 resolved=616 errors=499 current=uvicorn/protocols/websockets/websockets_impl.py
+[2026-09-20T05:52:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=25 resolved=908 errors=653 current=uvicorn/supervisors/watchgodreload.py
+[2026-09-20T05:53:06Z] [iter=1] Target type resolved target_type=call_site resolved=1221 errors=834 secs=174 mem_mb=627 MB
+[2026-09-20T05:53:12Z] [iter=1] Step 5: Writing final enrichment file triples=25240
+[2026-09-20T05:53:12Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2f22bca659cdcaea6ed37e5c9aa128bf99150eb6.nq.gz size_kb=497
+[2026-09-20T05:53:12Z] [iter=1] PHASE END: enrich elapsed_s=200 elapsed_min=3.3 total_triples=25240
