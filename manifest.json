@@ -32291,6 +32291,268 @@
       ],
       "ast": [
         "aggregate/ast/65ec8d132c37a8338a2f495fa1be9f14bd4368d9/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/65ec8d132c37a8338a2f495fa1be9f14bd4368d9.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "wsproto",
+          "ecosystem": "PYPI",
+          "version": "1.0.0",
+          "githubOrg": "python-hyper",
+          "githubRepo": "wsproto",
+          "githubCommit": "dafe0cae855d6fe35145671ebce0517828303828",
+          "githubTag": "1.0.0",
+          "githubUrl": "https://github.com/python-hyper/wsproto",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "twine",
+          "ecosystem": "PYPI",
+          "version": "3.4.2",
+          "githubOrg": "pypa",
+          "githubRepo": "twine",
+          "githubCommit": "9652b938692cdb2a304a83e01e0a9e8b1eadeace",
+          "githubTag": "3.4.2",
+          "githubUrl": "https://github.com/pypa/twine",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "wheel",
+          "ecosystem": "PYPI",
+          "version": "0.37.0",
+          "githubOrg": "pypa",
+          "githubRepo": "wheel",
+          "githubCommit": "b8c4aa055cea0132776e7e53edce3538710d5b68",
+          "githubTag": "0.37.0",
+          "githubUrl": "https://github.com/pypa/wheel",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "autoflake",
+          "ecosystem": "PYPI",
+          "version": "1.4",
+          "githubOrg": "PyCQA",
+          "githubRepo": "autoflake",
+          "githubCommit": "d43d8a770c0f9ef2f68b368670ab882f6ca6ea03",
+          "githubTag": "v1.4",
+          "githubUrl": "https://www.github.com/PyCQA/autoflake",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "black",
+          "ecosystem": "PYPI",
+          "version": "21.9",
+          "githubOrg": "psf",
+          "githubRepo": "black",
+          "githubUrl": "https://github.com/psf/black",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "flake8",
+          "ecosystem": "PYPI",
+          "version": "3.9.2",
+          "githubOrg": "pycqa",
+          "githubRepo": "flake8",
+          "githubCommit": "c6e0d27593a45342ffa96a18bba708a5aab32fdf",
+          "githubTag": "3.9.2",
+          "githubUrl": "https://github.com/pycqa/flake8",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "isort",
+          "ecosystem": "PYPI",
+          "version": "5.9.3",
+          "githubOrg": "PyCQA",
+          "githubRepo": "isort",
+          "githubCommit": "fd5ba70665a37ec301a1f714ed09336048b3be63",
+          "githubTag": "5.9.3",
+          "githubUrl": "https://github.com/PyCQA/isort",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "pytest",
+          "ecosystem": "PYPI",
+          "version": "6.2.5",
+          "githubOrg": "pytest-dev",
+          "githubRepo": "pytest",
+          "githubCommit": "1569fac603d9a50022e1474b494eebf970a2a3af",
+          "githubTag": "6.2.5",
+          "githubUrl": "https://github.com/pytest-dev/pytest",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "pytest-mock",
+          "ecosystem": "PYPI",
+          "version": "3.6.1",
+          "githubOrg": "pytest-dev",
+          "githubRepo": "pytest-mock",
+          "githubCommit": "6730ce36c42752b45b9f7388a430f2fb80fd24f7",
+          "githubTag": "v3.6.1",
+          "githubUrl": "https://github.com/pytest-dev/pytest-mock",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "mypy",
+          "ecosystem": "PYPI",
+          "version": "0.910",
+          "githubOrg": "python",
+          "githubRepo": "mypy",
+          "githubCommit": "f5fc579cf07f2078c9312044f6bcb132f891d746",
+          "githubTag": "v0.910",
+          "githubUrl": "https://github.com/python/mypy",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "types-click",
+          "ecosystem": "PYPI",
+          "version": "7.1.5",
+          "githubOrg": "python",
+          "githubRepo": "typeshed",
+          "githubUrl": "https://github.com/python/typeshed",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "types-pyyaml",
+          "ecosystem": "PYPI",
+          "version": "5.4.10",
+          "githubOrg": "python",
+          "githubRepo": "typeshed",
+          "githubUrl": "https://github.com/python/typeshed",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "trustme",
+          "ecosystem": "PYPI",
+          "version": "0.9.0",
+          "githubOrg": "python-trio",
+          "githubRepo": "trustme",
+          "githubCommit": "8fc5bf9c5afaf40843287e6eccca344713eddb50",
+          "githubTag": "v0.9.0",
+          "githubUrl": "https://github.com/python-trio/trustme",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "cryptography",
+          "ecosystem": "PYPI",
+          "version": "3.4.8",
+          "githubOrg": "pyca",
+          "githubRepo": "cryptography",
+          "githubCommit": "70ccc2542cf3bf374861b55f6527424307722763",
+          "githubTag": "3.4.8",
+          "githubUrl": "https://github.com/pyca/cryptography",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "coverage",
+          "ecosystem": "PYPI",
+          "version": "5.5",
+          "githubOrg": "coveragepy",
+          "githubRepo": "coveragepy",
+          "githubCommit": "f06b950c318bcd9cf8bc8ec3a03fb4d0d518b8d9",
+          "githubTag": "5.5",
+          "githubUrl": "https://github.com/coveragepy/coveragepy",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "coverage-conditional-plugin",
+          "ecosystem": "PYPI",
+          "version": "0.4.0",
+          "githubOrg": "wemake-services",
+          "githubRepo": "coverage-conditional-plugin",
+          "githubCommit": "39a3ce398fc1ee15e8c85e61448766da5b61b246",
+          "githubTag": "0.4.0",
+          "githubUrl": "https://github.com/wemake-services/coverage-conditional-plugin",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "httpx",
+          "ecosystem": "PYPI",
+          "version": "1.0.0",
+          "githubOrg": "encode",
+          "githubRepo": "httpx",
+          "githubUrl": "https://github.com/encode/httpx",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "pytest-asyncio",
+          "ecosystem": "PYPI",
+          "version": "0.15.1",
+          "githubOrg": "pytest-dev",
+          "githubRepo": "pytest-asyncio",
+          "githubCommit": "da50ce539a9c8f090b753a2d872aa1ccf920db0e",
+          "githubTag": "v0.15.1",
+          "githubUrl": "https://github.com/pytest-dev/pytest-asyncio",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "async-generator",
+          "ecosystem": "PYPI",
+          "version": "1.10",
+          "githubOrg": "python-trio",
+          "githubRepo": "async_generator",
+          "githubCommit": "2c5e2e201c4dcd40b112eb3193c73f2c2b84d263",
+          "githubTag": "v1.10",
+          "githubUrl": "https://github.com/python-trio/async_generator",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "mkdocs",
+          "ecosystem": "PYPI",
+          "version": "1.2.3",
+          "githubOrg": "mkdocs",
+          "githubRepo": "mkdocs",
+          "githubCommit": "d167eab473c1b772f0d5f999d580c8bf3ef9b59f",
+          "githubTag": "1.2.3",
+          "githubUrl": "https://github.com/mkdocs/mkdocs",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "mkdocs-material",
+          "ecosystem": "PYPI",
+          "version": "7.2.6",
+          "githubOrg": "squidfunk",
+          "githubRepo": "mkdocs-material",
+          "githubCommit": "bfdd0df4b4909f2ccf0714527a613cef70bca188",
+          "githubTag": "7.2.6",
+          "githubUrl": "https://github.com/squidfunk/mkdocs-material",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "h11",
+          "ecosystem": "PYPI",
+          "version": "0.16.0",
+          "githubOrg": "python-hyper",
+          "githubRepo": "h11",
+          "githubCommit": "1c5b07581f058886c8bdd87adababd7d959dc7ca",
+          "githubTag": "v0.16.0",
+          "githubUrl": "https://github.com/python-hyper/h11",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/h11/_events.py"
+        },
+        {
+          "packageName": "click",
+          "ecosystem": "PYPI",
+          "version": "8.5.0",
+          "githubOrg": "pallets",
+          "githubRepo": "click",
+          "githubCommit": "8b19813f2bfca99f1018a587a8cf54fc959f2e5d",
+          "githubTag": "8.5.0",
+          "githubUrl": "https://github.com/pallets/click",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/click/termui.py"
+        },
+        {
+          "packageName": "setuptools",
+          "ecosystem": "PYPI",
+          "version": "84.0.0",
+          "githubOrg": "pypa",
+          "githubRepo": "setuptools",
+          "githubCommit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87",
+          "githubTag": "v84.0.0",
+          "githubUrl": "https://github.com/pypa/setuptools",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/setuptools/__init__.py"
+        }
       ]
     }
   ],
