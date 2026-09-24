@@ -3,6 +3,11 @@
   "repo": "uvicorn",
   "versions": [
     {
+      "commit": "87da6cf4082cd28306bdb78d7d42552d131cc179",
+      "tag": "0.14.0",
+      "parsed_at": "2026-09-24T12:42:26.876412+00:00"
+    },
+    {
       "commit": "a6dff714f03d4b2434fa2ca6d800d2f42d8477ef",
       "tag": "0.15.0",
       "parsed_at": "2026-09-21T05:31:44.605180+00:00"
