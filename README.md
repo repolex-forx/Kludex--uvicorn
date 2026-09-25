@@ -6,29 +6,27 @@ RDF knowledge graph data for [Kludex/uvicorn](https://github.com/Kludex/uvicorn)
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download Kludex/uvicorn
+rlex download Kludex/uvicorn
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -49,6 +47,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 1c20f546574cc905a8b28a5390c3f815e27a84ab
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 1dfb0bd885bbb0c466c19eee8bb2001bed59ca8c
+│   │   │   └── chunk-001.nq.gz
+│   │   ├── 2a7634d190787aac8fce757146206565feba30fa
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 2f22bca659cdcaea6ed37e5c9aa128bf99150eb6
 │   │   │   └── chunk-001.nq.gz
@@ -165,6 +165,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 137f88ea3224b8134fc58ed1243881642382d31b.nq.gz
 │   │   ├── 1c20f546574cc905a8b28a5390c3f815e27a84ab.nq.gz
 │   │   ├── 1dfb0bd885bbb0c466c19eee8bb2001bed59ca8c.nq.gz
+│   │   ├── 2a7634d190787aac8fce757146206565feba30fa.nq.gz
 │   │   ├── 2f22bca659cdcaea6ed37e5c9aa128bf99150eb6.nq.gz
 │   │   ├── 3850ad6520cafb290bd4174fa9c4ca5d33440c82.nq.gz
 │   │   ├── 4098bcac97aa0fbda2f4e73278fbbe3b128be940.nq.gz
@@ -231,6 +232,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 1c20f546574cc905a8b28a5390c3f815e27a84ab
 │       │   └── chunk-001.nq.gz
 │       ├── 1dfb0bd885bbb0c466c19eee8bb2001bed59ca8c
+│       │   └── chunk-001.nq.gz
+│       ├── 2a7634d190787aac8fce757146206565feba30fa
 │       │   └── chunk-001.nq.gz
 │       ├── 2f22bca659cdcaea6ed37e5c9aa128bf99150eb6
 │       │   └── chunk-001.nq.gz
@@ -348,6 +351,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 0165256254142b24c49d29e346eb97de1cae40de.nq.gz
     ├── 0174bcce6d48de946214d59bcae5543d38d89c3a.nq.gz
     ├── 017ae769f81a89149b92c97ee3c0c3af6a2bd408.nq.gz
+    ├── 01fe0ddbd6b1f3c8ccb5aca225836aac3d9061c1.nq.gz
     ├── 02544382040cd438717a91d57820bfb6a45f80a0.nq.gz
     ├── 026016c77302e28b2d5e2333c1b5b45775f8e6e0.nq.gz
     ├── 027e6cc283d7dfc311d1901613cdf430344eef79.nq.gz
@@ -356,13 +360,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 039b554df7304f7987536637e11466f0c4cc8b36.nq.gz
     ├── 03a0a3a85828f138ed334f3d370fa4b39dfc90f3.nq.gz
     ├── 0402b0bf5e4365b7896bf316c72fb788366190c5.nq.gz
-    ├── 0434b9f8b4339d4169f0dca86d0077da6f25179a.nq.gz
-    ├── 0492cc33e934a75b14a2f1765c5a208785e2b48e.nq.gz
-    ├── 04b997ffeb10729c3ccf9f79b1f9873f3265a2a0.nq.gz
-    ├── 04bfb41cf2e4c9dec01953d749e355370d99fbb0.nq.gz
-    └── 04c13b5fac46571c8784f748b76b76346430335c.nq.gz
+    └── 0434b9f8b4339d4169f0dca86d0077da6f25179a.nq.gz
 
-126 directories, 200 files
+128 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -376,10 +376,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [Kludex/uvicorn](https://github.com/Kludex/uvicorn)
 
 ---
-*Parsed on 2026-09-24 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-25 by [repolex](https://repolex.ai)*
